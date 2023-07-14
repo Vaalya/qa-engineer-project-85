@@ -66,3 +66,15 @@
 - summary: |
     Проверка открытия сайта в разных браузерах
   status: pass
+
+- summary: |
+   Проверка кнопки "check"
+  status: pass
+
+- summary: |
+    Проверка появления модального окна с пользователем-победителем
+  status: pass
+
+- summary: |
+   Проверка кнопки "back to home"
+  status: pass
