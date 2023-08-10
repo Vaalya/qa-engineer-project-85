@@ -18,3 +18,24 @@ non-functional:
   - Сайт должен быть способен обрабатывать большое количество трафика (например, 1000 одновременных пользователей)
 implicit:
   - Пользователь должен иметь возможность видеть таблицу лидеров
+
+
+functional:
+  - The user must be able to register on the site
+  - The user should be able to create a game
+  - The user should be able to choose the level that suits him
+  - The user should be able to choose the type of game (with a bot, with a friend, with other users)
+  - The user should be able to select the game time (maximum and minimum time)
+  - The user should be able to select a job category
+  - The user should be able to check his code (correctly written code and incorrectly written code)
+  - The user must have a "check" button to check their solution
+  - The user should see a modal window where it says who is the winner of this game
+  - The user should be able to exit the game by pressing the "back to home" button
+non-functional:
+  - The site should be designed with usability in mind and optimized for speed
+  - The site must be secure and protect user data
+  - The website should be mobile friendly
+  - The site must be tested for compatibility with the latest versions of browsers
+  - The site must be able to handle a large amount of traffic (e.g. 1000 concurrent users)
+implicit:
+  - The user should be able to see the leaderboard
