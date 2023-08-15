@@ -1,99 +1,80 @@
 ---
 - summary: |
-    Проверка возможности зарегистрироваться на сайте
     Checking the ability to register on the site
   status: pass
 
 - summary: |
-    Проверка функции создания игры
-    Checking the game creation function
+    Checking the game creation functionality
   status: pass
 
 - summary: |
-    Проверка выбора функции уровень игры
-    Checking the selection of the game level function
+    Checking the selection of the game level functionality
   status: pass
 
 - summary: |
-    Проверка создания игры между двумя пользователями
     Verifying the creation of a game between two users
   status: pass
 
 - summary: |
-    Проверка создания игры с другом
     Verifying the creation of a game with a friend
   status: pass
 
 - summary: |
-    Проверка создания игры с ботом
     Checking the creation of a game with a bot
   status: pass
 
 - summary: |
-    Проверка максимального тайминга игры
     Checking the maximum game timing
   status: pass
 
 - summary: |
-    Проверка минимального тайминга игры
     Checking the minimum game timing
   status: pass
 
 - summary: |
-    Проверка выбора минимального уровня сложности игры
     Checking the choice of the minimum level of difficulty of the game
   status: pass
 
 - summary: |
-    Проверка выбора максимального уровня сложности игры
     Checking the choice of the maximum level of difficulty of the game
   status: pass  
 
 - summary: |
-    Проверка возможности выбора категории задания
     Checking if a job category can be selected
   status: pass
 
 - summary: |
-    Проверка возможности проверить игру при неверном решении задачи
     Checking the ability to check the game with an incorrect solution to the problem
   status: pass
   
 - summary: |
-    Проверка возможности проверить игру при верном решении задачи
     Checking the ability to test the game with the correct solution of the problem
   status: pass  
 
 - summary: |
-    Проверка возможности завершить игру - сдаться
-    Checking the ability to complete the game - surrender
+     Сheck functionality surrender
   status: pass 
 
 - summary: |
-    Проверка возможности видеть таблицу лидеров
     Checking the ability to see the leaderboard
   status: pass
 
 - summary: |
-    Проверка на наличие мобильной версии сайта
     Checking for a mobile version of the site
   status: pass
 
 - summary: |
-    Проверка открытия сайта в разных браузерах
-    Checking the opening of the site in different browsers
+    Cross-browser compatibility
   status: pass
 
 - summary: |
-   Проверка кнопки "check" Checking the "check" button
+   Checking the "check" button
   status: pass
 
 - summary: |
-    Проверка появления модального окна с пользователем-победителем
     Checking if the modal window appears with the winning user
   status: pass
 
 - summary: |
-   Проверка кнопки "back to home"
    Testing the "back to home" button
   status: pass
