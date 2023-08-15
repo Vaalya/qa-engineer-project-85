@@ -1,83 +1,76 @@
 ---
 - summary: |
-    Проверка возможности зарегистрироваться на сайте. Checking the ability to register on the site
+    Checking the ability to register on the site
   requirement: |
-    Пользователь должен иметь возможность зарегистрироваться на сайте
     The user must be able to register on the site
   prerequisites: |
-    Открыта главная страница: https://codebattle.hexlet.io/ . Main page opened: https://codebattle.hexlet.io/
+    Main page opened: https://codebattle.hexlet.io/
   test-data: |
     Login - SonyaWW
     Password - password  
     e-mail - Sonya.WW@gmail.com
   steps:
-    - На главной странице Нажимаем кнопку "Зарегистрироваться". On the main page, click the "Register" button
-    - Заполняем поле Логин. - Fill in the Login field
-    - Заполняем поле e-mail. - Fill in the e-mail field
-    - Заполняем поле Пароль. - Fill in the Password field
-    - Подтверждаем в поле пароль - Пароль. - Confirm the password in the field - Password
-    - Кликаем "зарегистрироваться". - Click "Register"
+    - On the main page, click the "Register" button
+    - Fill in the Login field
+    - Fill in the e-mail field
+    - Fill in the Password field
+    - Confirm the password in the field - Password
+    - Click "Register"
   expected-result: |
-    Пользователь должен попасть в Личный кабинет. The user must enter the Personal Account
+    User should be redirected to Personal Account page
 
 - summary: |
-    Проверка функции создания игры. Checking the game creation function
+    Checking the game creation functionality
   requirement: |
-    При нажании на кнопку "Create a game" пользователь должен иметь увидеть модальное окно
     When clicking on the "Create a game" button, the user should be able to see a modal window
   prerequisites: |
     The user is on the main page of the site: https://codebattle.hexlet.io/
-    Пользователь авторизован. User is authorized
+    User is authorized
   test-data: |
     no data
   steps:
-    - Нажимаем кнопку "Create a game". Press the button "Create a game"
+    - Press the button "Create a game"
   expected-result: |
-    Пользователь должен увидеть модальное окно с выбором функций для создания игры
     The user should see a modal window with a choice of functions for creating a game
 
 - summary: |
-    Проверка выбора функции уровень игры. Checking the selection of the game level function
+    Checking the selection of the game level functionality
   requirement: |
-    Пользователь должен иметь возможность выбрать свой уровень игры которую он создаёт
     The user should be able to choose his own level of the game he creates
   prerequisites: |
     The user is on the main page of the site:  https://codebattle.hexlet.io/
-    Пользователь авторизован. User is authorized
+    User is authorized
   test-data: |
     no data
   steps:
-    - Кликаем кнопку "Create a game". Click the "Create a game" button
-    - В модальном окне появляется варианты выбора уровней (4 уровня). Level selection options appear in the modal window (4 levels)
-    - Выбираем уровень. - Choose a level
+    - Click the "Create a game" button
+    - Level selection options appear in the modal window (4 levels)
+    - Choose a level
   expected-result: |
-    Пользователь имеет возможность выбрать уровень. The user has the option to select a level
+    The user has the option to select a level
 
 - summary: |
-    Проверка создания игры между двумя пользователями. Verifying the creation of a game between two users
+    Verifying the creation of a game between two users
   requirement: |
-    Пользователь может создать сражение с другим пользователем
     User can create a battle with another user
   prerequisites: 
-    Пользователь авторизован. User is authorized
+    User is authorized
   test-data: |
-    Соперник = любой пользователь онлайн. Opponent = any user online
+    Opponent = any user online
   steps:
-    - Нажать "Create game". Click "Create game"
-    - В открывающемся окне появляется варианты выбора 4 Уровня. - In the window that opens, there are options for choosing Level 4
-    - В поле "Choose opponent" выбрать соперника. - In the "Choose opponent" field, select an opponent
-    - Кликаем 1 Уровень. - Click 1 Level
-    - Кликаем в поле "Тип игры" кнопку "с другими пользователями". - Click in the field "Type of game" the button "with other users"
+    - Click "Create game"
+    - In the window that opens, there are options for choosing Level 4
+    - In the "Choose opponent" field, select an opponent
+    - Click 1 Level
+    - Click in the field "Type of game" the button "with other users"
     - Нажать "Сreate invite". - Click "Create invite"
-    - Ждем когда кто-нибудь присоединится к игре. - Waiting for someone to join the game
+    - Waiting for someone to join the game
   expected-result: |
-    Сражение запускается после того как соперник принимает подтверждпет игру
     The battle starts after the opponent accepts the confirmation game
 
 - summary: |
-    Проверка создания игры с другом. Verifying the creation of a game with a friend
+    Verifying the creation of a game with a friend
   requirement: |
-    Пользователь должен иметь возможность выбрать тип игры с другом
     The user should be able to select the type of game to play with a friend
   prerequisites: |
     The user is on the main page of the site:  https://codebattle.hexlet.io/
@@ -85,20 +78,18 @@
   test-data: |
     no data
   steps:
-    - Кликаем кнопку "Создать игру". Click the "Create Game" button
-    - В открывающемся окне появляется варианты выбора 4 Уровня. - In the window that opens, there are options for choosing Level 4
-    - Кликаем 1 Уровень. - Click 1 Level
-    - Кликаем в поле "Тип игры" кнопку "с другом". - Click in the field "Type of game" the button "with a friend"
-    - Выбираем из выпадающего списка соперника. - Select an opponent from the drop-down list
-    - Кликаем "Создать приглашение". - Click "Create Invitation"
+    - Click the "Create Game" button
+    - In the window that opens, there are options for choosing Level 4
+    - Click 1 Level
+    - Click in the field "Type of game" the button "with a friend"
+    - Select an opponent from the drop-down list
+    - Click "Create Invitation"
   expected-result: |
-    Пользователь попадает на главную страницу с приглашением для выбранного соперника.
-    The user gets to the main page with an invitation for the selected opponent.
+    The user redirected to the main page with an invitation for the selected opponent
 
 - summary: |
-    Проверка создания игры с ботом. Checking the creation of a game with a bot
+    Checking the creation of a game with a bot
   requirement: |
-    Пользователь должен иметь возможность выбрать тип игры с ботом
     The user should be able to select the type of game with the bot
   prerequisites: |
     The user is on the main page of the site::  https://codebattle.hexlet.io/
@@ -106,84 +97,77 @@
   test-data: |
     no data
   steps:
-    - Кликаем кнопку "Create a game". Click the "Create a game" button
-    - В категории "Game Type" выбираем пользователя игра с ботом. - In the "Game Type" category, select the user game with a bot
-    - Нажать "Сreate invite". - Click "Create invite"
+    - Click the "Create a game" button
+    - In the "Game Type" category, select the user game with a bot
+    - Click "Create invite"
   expected-result: |
-    Пользователь имеет возможность выбрать себе в соперники бота
     The user has the opportunity to choose a bot as a rival
 
 - summary: |
-    Проверка создания игры с максимальным таймингом игры. Checking the creation of a game with the maximum game timing
+    Checking the creation of a game with the maximum game timing
   requirement: |
-    Пользователь может настроить игру по времени максимум 60 минут
     The user can set the game time to a maximum of 60 minutes
   prerequisites: |
-    Пользователь авторизован. User is authorized
-    Выбран минимальный уровень сложности. Minimum difficulty level selected
-    Выбран формат игры "With a bot". Selected game format "With a bot"
+    User is authorized
+    Minimum difficulty level selected
+    Selected game format "With a bot"
   test-data: |
     Time = 60 min
   steps:
-    - Нажать "Create battle". Click "Create battle"
+    - Click "Create battle"
   expected-result: |
-    Пользователь имеет возможность выбрать максимальное время (60 минут) для решения задачи в игре
     The user has the ability to select the maximum time (60 minutes) for solving the problem in the game
 
 - summary: |
-    Проверка создания игры с минимальным таймингом игры. Checking the creation of a game with a minimum game timing
+    Checking the creation of a game with a minimum game timing
   requirement: |
-    Пользователь может настроить игру по времени минимум 3 минуты. The user can set the game time for a minimum of 3 minutes
+    The user can set the game time for a minimum of 3 minutes
   prerequisites: 
     User is authorized
-    Выбран минимальный уровень сложности. Minimum difficulty level selected
-    Выбран формат игры "With a bot". Selected game format "With a bot"
+    Minimum difficulty level selected
+    Selected game format "With a bot"
   test-data: |
     Time = 3 min. 
   steps:
     - Click "Create battle"
   expected-result: |
-    Пользователь имеет возможность выбрать минимальное время (3 минуты) для решения задачи в игре
     The user has the ability to select the minimum time (3 minutes) to solve the problem in the game
 
 - summary: |
-    Проверка выбора максимального уровня сложности игры. Checking the choice of the maximum level of difficulty of the game
+    Checking the choice of the maximum level of difficulty of the game
   requirement: |
-    Пользователь может выбрать мааксимальный уровень сложности игры
     The user can choose the maximum difficulty level of the game
   prerequisites: 
     User is authorized 
   test-data: |
-    Уровень сложности = 4. Difficulty Level = 4
+    Difficulty Level = 4
   steps:
     - Click "Create game" 
     - Select "Four stars"
     - Click "With a bot"
     - Click "Create battle" 
   expected-result: |
-    Игра запустилась на максимальном уровне сложности. The game started on the maximum difficulty level     
+    The game started on the maximum difficulty level     
 
 - summary: |
-    Проверка выбора минимального уровня сложности игры. Checking the choice of the minimum level of difficulty of the game
+    Checking the choice of the minimum level of difficulty of the game
   requirement: |
-    Пользователь может выбрать минимальный уровень сложности игры
     The user can choose the minimum difficulty level of the game
   prerequisites: 
      User is authorized 
   test-data: |
-    Уровень сложности = 1. Difficulty level = 1
+    Difficulty level = 1
   steps:
     - Click "Create game" 
     - Select "One star"
     - Click "With a bot"
     - Click "Create battle" 
   expected-result: |
-    Игра запустилась на минимальном уровне сложности. The game started on the lowest difficulty level. 
+    The game started on the lowest difficulty level. 
 
 - summary: |
-    Проверка возможности выбора категории задания. Checking if a job category can be selected
+    Checking if a job category can be selected
   requirement: |
-    Пользователь должен иметь возможность выбрать категорию задания
     The user should be able to select a job category
   prerequisites: |
     The user is on the main page of the site: https://codebattle.hexlet.io/
@@ -191,16 +175,14 @@
   test-data: |
     no data
   steps:
-    - Кликаем кнопку "Create a game". - Click the "Create a game" button
-    - В модальном окне в поле "Выберите задачу по названию или тегам" выбираем "rect_area". - In the modal window, in the "Select a task by name or tags" field, select "rect_area"
+    - Click the "Create a game" button
+    - In the modal window, in the "Select a task by name or tags" field, select "rect_area"
   expected-result: |
-    Пользователь может выбрать нужную ему категорию в игре. The user can select the category he needs in the game
+    The user can select the category he needs in the game
 
 - summary: |
-    Проверка возможности проверить игру при неверном решении задачи
     Checking the ability to check the game with an incorrect solution to the problem
   requirement: |
-    Пользователь должен иметь возможность проверить свой код
     The user should be able to test their code
   prerequisites: |
     The user is on the game page: https://codebattle.hexlet.io/games/142449
@@ -208,21 +190,19 @@
   test-data: |
     no data
   steps:
-    - Кликаем кнопку "Создать игру". Click the "Create Game" button
-    - В открывающемся окне в поле выбираем Уровень 1. - In the window that opens, in the field, select Level 1
-    - Выбираем тип игры с ботом. - Choose the type of game with the bot
-    - Выбираем задачу rect_area. - Select the task rect_area
-    - Кликаем "Создать битву". - Click "Create Battle"
-    - В поле пишем код #"const _ = require("lodash");". - In the field, write the code #"const _ = require("lodash");"
-    - Кликаем "проверить решение". - Click "check solution"
+    - Click the "Create Game" button
+    - In the window that opens, in the field, select Level 1
+    - Choose the type of game with the bot
+    - Select the task rect_area
+    - Click "Create Battle"
+    - In the field, write the code #"const _ = require("lodash");"
+    - Click "check solution"
   expected-result: |
-    Пользователь видит сообщение "Решение неверно". The user sees the message "The solution is incorrect"
+    The user sees the message "The solution is incorrect"
 
 - summary: |
-    Проверка возможности проверить игру при верном решении задачи
     Checking the ability to test the game with the correct solution of the problem
   requirement: |
-    Пользователь должен иметь возможность проверить свой код
     The user should be able to test their code
   prerequisites: |
     The user is on the game page: https://codebattle.hexlet.io/games/142449
@@ -230,12 +210,12 @@
   test-data: |
     - no data
   steps:
-    - Кликаем кнопку "Создать игру". Click the "Create Game" button
-    - В открывающемся окне в поле выбираем Уровень 1. - In the window that opens, in the field, select Level 1
-    - Выбираем тип игры с ботом. - Choose the type of game with the bot
-    - Выбираем задачу "rect_area". - Select the task "rect_area"
-    - Кликаем "Создать битву". - Click "Create Battle"
-    - В поле пишем код. - Write the code in the field
+    - Click the "Create Game" button
+    - In the window that opens, in the field, select Level 1
+    - Choose the type of game with the bot
+    - Select the task "rect_area"
+    - Click "Create Battle"
+    - Write the code in the field
     #const _ = require("lodash");
     #const R = require("rambda");
 
@@ -243,15 +223,13 @@
     #return width * length;
     #};
     #module.exports = solution;"
-    - Кликаем "проверить решение". Click "check solution"
+    - Click "check solution"
   expected-result: |
-    Пользователь видит сообщение "Решение верно". The user sees the message "Solution is correct"
+    The user sees the message "Solution is correct"
 
 - summary: |
-    Проверка возможности завершить игру - сдаться
     Checking the ability to complete the game - surrender
   requirement: |
-    Пользователь должен иметь возможность проверить свой код
     The user should be able to test their code
   prerequisites: |
     The user is on the game page: https://codebattle.hexlet.io/games/142449
@@ -259,38 +237,35 @@
   test-data: |
     no data 
   steps:
-    - Кликаем кнопку "Создать игру". Click the "Create Game" button
-    - В открывающемся окне в поле выбираем Уровень 1. - In the window that opens, in the field, select Level 1
-    - Выбираем тип игры с ботом. - Choose the type of game with the bot
-    - Выбираем задачу "rect_area". - Select the task "rect_area"
-    - Кликаем "Создать битву". - Click "Create Battle"
-    - Кликаем кнопку "сдаться". - Click on the "surrender" button
+    - Click the "Create Game" button
+    - In the window that opens, in the field, select Level 1
+    - Choose the type of game with the bot
+    - Select the task "rect_area"
+    - Click "Create Battle"
+    - Click on the "surrender" button
   expected-result: |
-    Пользователь видит сообщение "Ты проиграл"
     The user sees the message "You lost"
 
 - summary: |
-    Проверка возможности видеть таблицу лидеров. Checking the ability to see the leaderboard
+    Checking the ability to see the leaderboard
   requirement: |
-    Пользователь должен иметь возможность видеть таблицу лидеров
     The user should be able to see the leaderboard
   prerequisites: |
     The user is on the main page of the site: https://codebattle.hexlet.io/
-    Пользователь авторизован через "Github". The user is authorized via "Github"
+    The user is authorized via "Github"
   test-data: |
     no data
   steps:
     - no data
   expected-result: |
-    Пользователь видит "Таблицу лидеров"
     The user sees the "Leaderboard"
 
 - summary: |
-    Проверка на наличие мобильной версии сайта. Checking for a mobile version of the site
+    Checking for a mobile version of the site
   requirement: |
-    Сайт должен иметь мобильную версию. The site must have a mobile version
+    The site must have a mobile version
   prerequisites: |
-    Открыт сайт https://codebattle.hexlet.io/ .Website launched https://codebattle.hexlet.io/
+    Website launched https://codebattle.hexlet.io/
     Open DevTools
   test-data: |
     Devices to check =  Iphone 12, Ipad Pro, Samsug Galaxy S9+
@@ -301,17 +276,16 @@
     - Click "With a bot"
     - Click "Create battle"
   expected-result: |
-    На экран выводится корректно сверстанный сайт, функциональность основных кнопок работает
     A correctly designed site is displayed on the screen, the functionality of the main buttons works
 
 - summary: |
-    Проверка открытия сайта в разных браузерах. Checking the opening of the site in different browsers
+    Checking the opening of the site in different browsers
   requirement: |
-    Сайт должен быть совместим с последней версией браузера. The site must be compatible with the latest version of the browser
+    The site must be compatible with the latest version of the browser
   prerequisites: 
-    Открыт сайт https://codebattle.hexlet.io/ .Website launched https://codebattle.hexlet.io/
-    Авторизация в Browser Stack выполнена. Authorization in Browser Stack completed
-    Выбрано окружение - Mac (OS Ventura). Environment selected - Mac (OS Ventura)
+    Website launched https://codebattle.hexlet.io/
+    Authorization in Browser Stack completed
+    Environment selected - Mac (OS Ventura)
   test-data: |
     Browsers = Safari, Opera, Chrome, Yandex, Firefox
   steps:
@@ -322,56 +296,48 @@
     - Нажать "Sign in". - Click "Sign in"
     - Нажать "Sign in with GitHub". - Click "Sign in with GitHub"
   expected-result: |
-    Сайт открывается корректно, наполнение страницы отображается корректно для пользователя сайта
     The site opens correctly, the content of the page is displayed correctly for the site user
 
 - summary: |
-    Проверка кнопки "check". Checking the "check" button
+    Checking the "check" button
   requirement: |
-    Пользователь должен иметь кнопку "check" для проверки своего решения
     The user must have a "check" button to check their solution
   prerequisites: |
-    Пользователь авторизован. User is authorized
+    User is authorized
     The user is on the game page: https://codebattle.hexlet.io/games/142449
   test-data: |
-    Игрок в "битве". The player in the battle
+    The player in the battle
   steps:
-    - Пишем решение. Writing a Solution
-    - Кликаем кнопку "check". - Click the "check" button
+    - Writing a Solution
+    - Click the "check" button
   expected-result: |
-    Пользователь должен иметь возможность проверить свое решение с помощью кнопки "check"
     The user should be able to check their solution with a "check" button
 
 - summary: |
-    Проверка появления модального окна с пользователем-победителем
     Checking if the modal window appears with the winning user
   requirement: |
-    Пользователь должен видеть модальное окно, где написано, кто является победителем этой игры
     the user should see a modal window where it says who is the winner of this game
   prerequisites: |
     User is authorized
     The user is on the game page: https://codebattle.hexlet.io/games/142449
   test-data: |
-    Игрок в "битве" . The player in the battle
+    The player in the battle
   steps:
-    - Пишем решение. Writing a Solution
-    - Кликаем кнопку "check". - Click the "check" button
+    - Writing a Solution
+    - Click the "check" button
   expected-result: |
-    Пользователь должен видеть модальное окно с победителем в битве
     The user should see a modal window with the winner of the battle
 
 - summary: |
-    Проверка кнопки "back to home". Testing the "back to home" button
+    Testing the "back to home" button
   requirement: |
-    Пользователь должен иметь возможность выйти из игры по нажатию кнопки "back to home"
     The user should be able to exit the game by pressing the "back to home" button
   prerequisites: |
     User is authorized
     The user is on the game page: https://codebattle.hexlet.io/games/142449
   test-data: |
-    Игрок в "битве" .The player in the battle
+    The player in the battle
   steps:
-    - Кликаем кнопку "back to home". Click the "back to home" button
+    - Click the "back to home" button
   expected-result: |
-    Пользователь может выйти из игры нажав на кнопку "back to home"
     The user can exit the game by clicking on the "back to home" button
